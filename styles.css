@@ -205,4 +205,18 @@ body.index {
     height: auto;
     border-radius: 8px;
 }
+@media (max-width: 768px) {
+    .menu { display: none; } /* Прячем обычное меню */
+    .burger-menu { display: block; }
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 0;
+        background: #333;
+        text-align: center;
+    }
+    .mobile-menu.show { display: block; }
+}
 
